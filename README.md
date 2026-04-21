@@ -1,4 +1,4 @@
-# ISSENO 公開用サイト一式
+# CB 公開用サイト一式
 
 このフォルダは、ビルド不要でそのまま Vercel にアップできる静的サイト一式です。
 
@@ -26,8 +26,8 @@
 - `sitemap.xml`
 
 例：
-- `https://isseno.vercel.app/`
-- `https://isseno.co.jp/`
+- `https://cb-company.vercel.app/`
+- `https://example.co.jp/`
 
 ## Google に載せる流れ
 1. Google Search Console にサイトを登録
@@ -40,3 +40,7 @@
 - プライバシーポリシー
 - 採用情報ページ
 - 実績 / 導入事例
+
+
+## 商号について
+現時点ではサイト表記を「株式会社CB」とし、本文内に「2026年5月に株式会社ISSENOへ商号変更予定」と追記しています。5月以降はタイトル・会社概要・フッター表記をISSENOへ差し替えてください。
