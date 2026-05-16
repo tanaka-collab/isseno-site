@@ -1,46 +1,22 @@
-# CB 公開用サイト一式
+# ISSENO Corporate Website
 
-このフォルダは、ビルド不要でそのまま Vercel にアップできる静的サイト一式です。
+このフォルダは、株式会社ISSENOの静的コーポレートサイト一式です。
 
-## 入っているもの
+## 含まれるファイル
 - `index.html` : トップページ
-- `robots.txt` : クローラー向け設定
+- `robots.txt` : 検索エンジン向け設定
 - `sitemap.xml` : サイトマップ
-- `vercel.json` : Vercel 用設定
+- `vercel.json` : Vercel向け設定
 
-## 公開手順（いちばん簡単）
-1. Vercel にログイン
-2. `Add New` → `Project` → `Browse All Templates` ではなく、右上の `Import` か `Deploy` を選ぶ
-3. このフォルダをアップロード
-4. 公開URLが発行されたら表示確認
+## 公開方法
+1. フォルダ内の中身を GitHub リポジトリ直下にアップロード
+2. Vercel でそのリポジトリを Import
+3. Framework Preset は `Other`
+4. Build Command は空欄のまま Deploy
 
-## 独自ドメインを付ける場合
-1. Vercel の対象プロジェクトを開く
-2. `Settings` → `Domains`
-3. 取得したドメインを追加
-4. Vercel が表示する DNS 設定を、ドメイン会社側で設定
+## 公開後に必ずやること
+- `index.html` の `og:url`
+- `robots.txt` の Sitemap URL
+- `sitemap.xml` の URL
 
-## 公開後に必ず直すところ
-独自ドメインや Vercel の URL が決まったら、次の2ファイル内の `https://example.com/` を実際のURLに置き換えてください。
-- `robots.txt`
-- `sitemap.xml`
-
-例：
-- `https://cb-company.vercel.app/`
-- `https://example.co.jp/`
-
-## Google に載せる流れ
-1. Google Search Console にサイトを登録
-2. `sitemap.xml` を送信
-3. トップURLのインデックス登録を申請
-
-## 追加したほうがよい項目
-- 正式な所在地（番地まで）
-- 問い合わせ先メールアドレス
-- プライバシーポリシー
-- 採用情報ページ
-- 実績 / 導入事例
-
-
-## 商号について
-現時点ではサイト表記を「株式会社CB」とし、本文内に「2026年5月に株式会社ISSENOへ商号変更予定」と追記しています。5月以降はタイトル・会社概要・フッター表記をISSENOへ差し替えてください。
+上記の `https://example.com/` を実際の公開URLまたは独自ドメインに変更してください。
